@@ -1,0 +1,6 @@
+<h1>All photos</h1>
+<% @pets.each do |pet| %>
+  <h2><%= pet.name %></h2>
+  <p>Width: <%= pet.breed %></p>
+  <p>Image: <img src="<%= pet.image %>"> </p>
+<% end %>
