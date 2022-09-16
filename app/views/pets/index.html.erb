@@ -1,6 +1,10 @@
 <h1>All photos</h1>
+<%= link_to "New pet", new_pet_path %>
 <% @pets.each do |pet| %>
   <h2><%= pet.name %></h2>
-  <p>Width: <%= pet.breed %></p>
-  <p>Image: <img src="<%= pet.image %>"> </p>
+  <h3>Breed: <%= pet.breed %></h3>
+  <h4>Image: <img src="<%= pet.image %>"> </h4>
+  <%= link_to "More Info", pet %>
+  
+ 
 <% end %>
